@@ -49,6 +49,8 @@ section {
     padding: 30px;
     border-radius: 8px;
     color: var(--white);
+    -webkit-box-shadow: 5px 5px 11px 3px rgba(0,0,0,0.17); 
+    box-shadow: 5px 5px 11px 3px rgba(0,0,0,0.17);
 }
 
 .testmonial-one {
@@ -118,4 +120,47 @@ section {
     opacity: 70%;
     line-height: 18px;
     text-align: left;
+}
+
+@media (min-width: 1440px) {
+
+    section {
+        grid-template-areas: 
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+        grid-template-columns: repeat(4, 1fr);
+        width: 80%;
+        height: 75%;
+        padding: 0;
+        gap: 30px;
+    }
+
+    
+    .testmonial {
+        width: auto;
+        height: 100%;
+        gap: 20px;
+    }
+
+    .testmonial-one {
+        grid-area: daniel;
+    }
+
+    .testmonial-two {
+        grid-area: jonathan;
+    }
+
+    .testmonial-three {
+        grid-area: jeanette;
+    }
+
+    .testmonial-four {
+        grid-area: patrick;
+    }
+
+    .testmonial-five {
+        grid-area: kira;
+    }
+
+ 
 }
