@@ -1,0 +1,75 @@
+@media (min-width: 576px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "daniel daniel"
+        "jonathan jeanette"
+        "kira kira"
+        "patrick patrick";
+        gap: 28px;
+    }
+
+    .testimonial {
+        height: 100%;
+        gap: 20px;
+    }
+
+    .testimonial-one {
+        grid-area: daniel;
+    }
+
+    .testimonial-two {
+        grid-area: jonathan;
+    }
+
+    .testimonial-three {
+        grid-area: jeanette;
+    }
+
+    .testimonial-four {
+        grid-area: patrick;
+    }
+
+    .testimonial-five {
+        grid-area: kira;
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "daniel daniel"
+        "jonathan kira"
+        "jeanette kira"
+        "patrick patrick";
+    }
+}
+
+@media (min-width: 992px) {
+    section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "daniel daniel jonathan"
+        "kira kira kira"
+        "jeanette patrick patrick";
+        max-width: 1000px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+
+    section {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+        max-width: 1100px;
+        max-height: 580px;
+    }
+}
